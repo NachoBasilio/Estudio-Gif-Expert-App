@@ -1,8 +1,14 @@
-# React + Vite
+# Buscador de GIFs en React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Buscador de GIFs](https://i.gifer.com/YNXo.gif)
 
-Currently, two official plugins are available:
+## Descripción
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este proyecto es un buscador de GIFs desarrollado en React que te permite buscar y explorar una amplia variedad de GIFs de una manera rápida y sencilla.
+
+## Funcionalidades
+
+- Búsqueda de GIFs en tiempo real.
+- Explorar GIFs por categorías populares.
+- Vista previa de GIFs antes de seleccionarlos.
+- Copiar el enlace del GIF seleccionado al portapapeles.
