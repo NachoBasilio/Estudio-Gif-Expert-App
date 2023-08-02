@@ -1,6 +1,5 @@
 # Buscador de GIFs en React
 
-![Buscador de GIFs](https://i.gifer.com/YNXo.gif)
 
 ## Descripción
 
