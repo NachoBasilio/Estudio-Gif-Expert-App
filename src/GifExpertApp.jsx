@@ -1,5 +1,6 @@
 import{ useState } from 'react'
 import AddCategory from './components/AddCategory'
+import GifGrids from './components/GifGrids'
 
 export default function GifExpertApp() {
     const [categories, setCategories] = useState(['One Punch', 'Samurai X', 'Dragon Ball'])
@@ -31,14 +32,15 @@ export default function GifExpertApp() {
         value={value}
         setValue={setValue}
         />
+        
+       
+        {
+            categories.map(category => 
+                <GifGrids key={category} category={category}/>
+            )
+        }
+        
 
-        <ol>
-            {
-                categories.map(category => {
-                    return <li key={category}>{category}</li>
-                })
-            }
-        </ol>
     </div>
   )
 }
