@@ -11,7 +11,12 @@ export default function GifExpertApp() {
     <div>
         <h1>GifExpertApp</h1>
 
-        <AddCategory onAddCategory={onAddCategory}/>
+        <AddCategory 
+        onNewCategory={(value) =>{
+            onAddCategory(value)
+        }}
+        categories={categories}
+        />
         <ol>
             {
                 categories.map(category => {

@@ -1,10 +1,15 @@
 import PropTypes from 'prop-types'
 
-export default function AddCategory({onAddCategory}) {
+export default function AddCategory({onNewCategory, categories}) {
 
     const handlerSubmit = (e) => {
         e.preventDefault()
-        onAddCategory(e.target[0].value)
+        const newCategory = e.target[0].value.trim()
+        if(newCategory.length > 2 && !categories.includes(newCategory) ){
+            onNewCategory(newCategory)
+            e.target[0].value = ''
+        }
+
     }
 
   return (
@@ -24,5 +29,6 @@ export default function AddCategory({onAddCategory}) {
 }
 
 AddCategory.propTypes = {
-    onAddCategory: PropTypes.func.isRequired
+    onNewCategory: PropTypes.func.isRequired,
+    categories: PropTypes.array.isRequired
 }
