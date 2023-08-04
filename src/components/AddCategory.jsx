@@ -24,7 +24,6 @@ export default function AddCategory({onNewCategory, value, setValue}) {
                 setValue(e.target.value)
             }}
             />
-            <button>Agrega Categoria</button>
         </form>
 
     </>

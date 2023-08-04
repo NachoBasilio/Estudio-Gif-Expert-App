@@ -24,8 +24,7 @@ export default function GifGrids({category}){
                         <img src={img.url}  />
                     </li>
                     )
-                    
-                    )}
+                )}
             </ol>
         </>
     )
