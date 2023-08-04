@@ -3,7 +3,7 @@ import AddCategory from './components/AddCategory'
 import GifGrids from './components/GifGrids'
 
 export default function GifExpertApp() {
-    const [categories, setCategories] = useState(['One Punch', 'Samurai X', 'Dragon Ball'])
+    const [categories, setCategories] = useState(['One Punch'])
     const [error, setError] = useState(false)
     const [value, setValue] = useState('')
 
