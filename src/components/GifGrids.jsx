@@ -4,6 +4,7 @@ import GifItem from '../components/GifItem';
 import useFetchGifs from '../hooks/useFetchGifs';
 
 
+
 export default function GifGrids({category}){
 
     const {images, isLoading} = useFetchGifs(category)
