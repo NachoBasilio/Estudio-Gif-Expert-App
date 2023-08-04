@@ -1,6 +1,10 @@
-import PropTypes from 'prop-types';
-import getGifs from '../helpers/getGifs';
 import { useEffect, useState } from 'react';
+
+import PropTypes from 'prop-types';
+
+import GifItem from '../components/GifItem';
+import getGifs from '../helpers/getGifs';
+
 
 
 
@@ -17,15 +21,13 @@ export default function GifGrids({category}){
     return (
         <>
             <h3>{category}</h3>
-            <ol>
-                {images.map(img =>
-                    (<li key={img.id}>
-                        <p>{img.title}</p>
-                        <img src={img.url}  />
-                    </li>
-                    )
-                )}
-            </ol>
+            <div className='card-grid'>
+                {
+                    images.map(img => (
+                        <GifItem key={img.id} img={img}></GifItem>  
+                    ))
+                }
+            </div>
         </>
     )
 }

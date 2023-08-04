@@ -14,7 +14,7 @@ export default function GifExpertApp() {
         }
         setError(false)
         setValue('')
-        setCategories([...categories, nuevaCategoria])
+        setCategories([nuevaCategoria, ...categories])
         
     }
   return (
