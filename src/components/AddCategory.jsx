@@ -4,7 +4,7 @@ export default function AddCategory({onNewCategory, value, setValue}) {
 
     const handlerSubmit = (e) => {
         e.preventDefault()
-        const newCategory = e.target[0].value.trim()
+        const newCategory = e.target.value.trim()
         if(newCategory.length > 2 ){
             onNewCategory(newCategory)
         }
@@ -13,7 +13,7 @@ export default function AddCategory({onNewCategory, value, setValue}) {
 
   return (
     <>  
-        <form action="" onSubmit={(e)=>{
+        <form action="" aria-label='form' onSubmit={(e)=>{
             handlerSubmit(e)
         }}>
             <input 
