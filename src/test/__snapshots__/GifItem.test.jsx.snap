@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test de screen debe de mostrar el componente correctamente 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <p>
+      Un titulo
+    </p>
+    <img
+      alt="Un titulo"
+      src="https://localhost/algo.jpg"
+    />
+  </div>
+</div>
+`;
